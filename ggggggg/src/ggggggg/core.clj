@@ -15,5 +15,6 @@
           (recur end (+ 1 end) (str word (dict (subs text begin end))))
           (recur begin (+ 1 end) word)))))))
 
+(print (slurp "input.txt"))
 (print (decode (slurp "input.txt")))
 
